@@ -6,3 +6,6 @@ output: github_document
 ```{r setup, include = FALSE}
 library(tidyverse)
 ```
+
+# Problem 1
+## This problem focuses on variable types and coercion.
