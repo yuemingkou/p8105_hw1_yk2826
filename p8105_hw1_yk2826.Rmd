@@ -69,3 +69,7 @@ as.numeric(factor_to_char)
 ```
 
 Notice that NAs introduced by coercion when converting the factor variable from factor to charcter to numeric.
+
+
+# Problem 2
+## This problem focuses on plotting and the use of inline R code.
