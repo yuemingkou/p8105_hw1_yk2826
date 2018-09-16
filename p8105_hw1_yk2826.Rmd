@@ -44,3 +44,14 @@ mean(coercion_df$vec_factor)
 The "mean()" function works for the random sample and the logical vector,
 but it doesn't work for the character vector and the factor vector.
 The reason is elements of the character vector and the factor vector are not numeric or logical.
+
+The chunk below applies the "as.numeric" function to the logical, character, and factor variables.
+
+```{r, results = 'hide'}
+as.numeric(coercion_df$vec_unif)
+as.numeric(coercion_df$vec_logical)
+as.numeric(coercion_df$vec_char)
+as.numeric(coercion_df$vec_factor)
+```
+
+Notice that NAs introduced by coercion when applying the "as.numeric" function to the character variables.
