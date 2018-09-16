@@ -55,3 +55,17 @@ as.numeric(coercion_df$vec_factor)
 ```
 
 Notice that NAs introduced by coercion when applying the "as.numeric" function to the character variables.
+
+
+The chunk below converts the character variable from character to factor to numeric; similarly, converts the factor variable from factor to character to numeric.
+
+```{r convert}
+char_to_factor = as.factor(coercion_df$vec_char)
+char_to_factor
+as.numeric(char_to_factor)
+factor_to_char = as.character(coercion_df$vec_factor)
+factor_to_char
+as.numeric(factor_to_char)
+```
+
+Notice that NAs introduced by coercion when converting the factor variable from factor to charcter to numeric.
