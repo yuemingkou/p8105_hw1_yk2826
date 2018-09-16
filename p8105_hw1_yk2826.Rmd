@@ -31,3 +31,16 @@ coercion_df = tibble(
                         "purple", "grey", "pink"))
 )
 ```
+
+The chunk below try to take the mean of each variable in coercion_df
+
+```{r take_the_mean}
+mean(coercion_df$vec_unif)
+mean(coercion_df$vec_logical)
+mean(coercion_df$vec_char)
+mean(coercion_df$vec_factor)
+```
+
+The "mean()" function works for the random sample and the logical vector,
+but it doesn't work for the character vector and the factor vector.
+The reason is elements of the character vector and the factor vector are not numeric or logical.
