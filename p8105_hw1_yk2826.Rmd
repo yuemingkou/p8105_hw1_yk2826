@@ -108,14 +108,14 @@ The mean of x is `r mean(plot_df$x)`.
 
 The median of x is `r median(plot_df$x)`.
 
-The proportion of cases for which the logical vector is TRUE is `r sum(plot_df$vec_logical, na.rm = TRUE) / 1000`.
+The proportion of cases for which the logical vector is TRUE is `r sum(plot_df$vec_logical, na.rm = TRUE) / length(plot_df$vec_logical)`.
 
 
 The chunk below makes scatterplots of y vs x; exports the first scatterplot.
 
 ```{r scatterplots}
-ggplot(plot_df, aes(x = x, y = y)) + geom_point(aes(color = vec_logical))
+ggplot(plot_df, aes(x = x, y = y, color = vec_logical)) + geom_point()
 ggsave("scatter_logical.pdf", height = 4, width = 6)
-ggplot(plot_df, aes(x = x, y = y)) + geom_point(aes(color = vec_numeric)) 
-ggplot(plot_df, aes(x = x, y = y)) + geom_point(aes(color = vec_factor)) 
+ggplot(plot_df, aes(x = x, y = y, color = vec_numeric)) + geom_point() 
+ggplot(plot_df, aes(x = x, y = y, color = vec_factor)) + geom_point() 
 ```
