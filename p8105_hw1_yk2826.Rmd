@@ -99,3 +99,13 @@ plot_df = tibble(
 )
 
 ```
+
+First I write a short description of my vector using inline R code.
+
+The size of the dataset is `r dim(plot_df)`.
+
+The mean of x is `r mean(plot_df$x)`.
+
+The median of x is `r median(plot_df$x)`.
+
+The proportion of cases for which the logical vector is TRUE is `r sum(plot_df$vec_logical, na.rm = TRUE) / 1000`.
