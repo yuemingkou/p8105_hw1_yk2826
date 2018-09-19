@@ -52,6 +52,7 @@ as.numeric(coercion_df$vec_unif)
 as.numeric(coercion_df$vec_logical)
 as.numeric(coercion_df$vec_char)
 as.numeric(coercion_df$vec_factor)
+base::Sys.setenv(LANG = "en")
 ```
 
 Notice that NAs introduced by coercion when applying the "as.numeric" function to the character variables.
